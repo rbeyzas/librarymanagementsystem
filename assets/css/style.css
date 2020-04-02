@@ -1,0 +1,668 @@
+@font-face {
+  src: url("../fonts/Palanquin-Thin.ttf");
+  font-family: "Palanquin-Thin";
+}
+@font-face {
+  src: url("../fonts/Palanquin-Regular.ttf");
+  font-family: "Palanquin-Regular";
+}
+@font-face {
+  src: url("../fonts/Bellb.ttf");
+  font-family: "Bell";
+}
+@font-face {
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-family: "OpenSans";
+}
+
+body {
+  background: #222222;
+}
+img {
+  width: 100%;
+}
+/*** login form ***/
+
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.login-form-1 {
+  padding: 5%;
+  background: #706b6b;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3 {
+  text-align: center;
+  color: #333;
+}
+.login-form-2 {
+  padding: 5%;
+  background: #706b6b;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: #fff;
+}
+.login-container form {
+  padding: 10%;
+}
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form-1 .btnSubmit {
+  font-weight: 600;
+  color: #0062cc;
+  background-color: #fff;
+}
+.login-form-2 .btnSubmit {
+  font-weight: 600;
+  color: #0062cc;
+  background-color: #fff;
+}
+.login-form-2 .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-form-1 .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*** Home - Header ***/
+.home-header {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  opacity: 0.6;
+}
+.home-header:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+button.toggle-nav {
+  display: none;
+  outline: 0;
+  cursor: pointer;
+}
+.logo {
+  float: left;
+  padding: 20px 0 15px 100px;
+  width: 12%;
+}
+.nav {
+  float: right;
+  padding-top: 50px;
+}
+.nav:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13pt;
+  font-family: "Palanquin-Thin";
+  transition: all 0.9s ease;
+  cursor: pointer;
+}
+.nav ul li a:hover {
+  color: #fec200;
+  border-bottom: 1px solid #fec200;
+  box-shadow: 0px 3px 0px #fec200;
+}
+.dropbtn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: "Palanquin-Thin";
+  font-size: 14pt;
+  transition: all 0.4s ease;
+  outline: 0;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  color: #fec200;
+  border-bottom: 1px solid #fec200;
+  box-shadow: 0px 3px 0px #fec200;
+}
+.dropdown-content {
+  background: #000000;
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-bottom: 5px;
+}
+.dropdown-content a {
+  color: #000000;
+  padding: 10px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+button i {
+  padding-left: 5px;
+}
+
+/*** Home - Slider ***/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.intro-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
+  height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */
+  object-fit: cover;
+  z-index: -1;
+  /* filter: brightness(50%); */ /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+/* .intro-slideshow img:first-child {
+  display: block;
+  opacity: 1;
+} */
+.intro .intro-header {
+  border-radius: 0.5rem;
+  padding: 2rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.intro h1 {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+.intro p {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .intro-header {
+    padding: 1.5rem 2rem;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  .intro p {
+    font-size: 1.25rem;
+  }
+}
+
+/*** Home-Most Read Books ***/
+section.books {
+  margin-top: 10px;
+}
+section.books:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.readbooks-line {
+  margin-left: 100px;
+  background-color: #a7a7a7;
+  height: 1px;
+  width: 550px;
+  margin-top: 100px;
+}
+.readbooks-title {
+  color: #a7a7a7;
+  font-family: "Palanquin-Thin";
+  font-size: 45pt;
+  padding-left: 400px;
+}
+.readbooks-slider {
+  margin: 40px 0px 100px 0px;
+  background-color: #181818;
+  padding: 0px 50px;
+}
+.readbooks-slider .item {
+  margin: 25px 0px;
+}
+#subject .owl-nav.disabled {
+  display: block;
+}
+#subject .owl-nav [class*="owl-"] {
+  color: #000000;
+  font-size: 20px;
+  padding: 0px 20px;
+  background: #fec200;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#subject .owl-prev {
+  margin-right: 25%;
+}
+#subject .owl-next {
+  margin-left: 25%;
+}
+#subject .owl-nav.disabled:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.subject-image {
+  transition: all 0.9s ease;
+}
+.subject-image:hover {
+  transform: scale(1.1);
+}
+.subject-desc {
+  margin-left: -15px;
+  padding: 10px 20px;
+  box-shadow: -6px 5px 14px #060606;
+  background-color: #282828;
+}
+.subject-title {
+  line-height: 30px;
+  text-align: justify;
+  color: #a9a9a9;
+  font-size: 10pt;
+  font-family: "Palanquin-Regular";
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18pt;
+}
+.desc {
+  line-height: 30px;
+  text-align: justify;
+  color: #a9a9a9;
+  font-size: 10pt;
+  font-family: "Palanquin-Regular";
+  padding-top: 20px;
+}
+.end-line {
+  background-color: #a7a7a7;
+  height: 1px;
+  width: 30%;
+  float: right;
+  margin-right: 200px;
+}
+
+/*** home - counter ***/
+section.counters {
+  background-color: #181818;
+  margin: 150px 0px 200px 0px;
+  padding: 40px 0;
+}
+section.counters:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+section.counters .panel {
+  padding: 0px 100px;
+  background-color: #282828;
+  box-shadow: 0px 10px 14px #060606;
+}
+.fixing-image {
+  transition: all 0.9s ease;
+}
+.fixing-image:hover {
+  transform: scale(1.1);
+  transition: all 0.9s ease;
+}
+.fixing-image-title {
+  right: 30px;
+  position: absolute;
+  z-index: 1;
+  font-size: 35pt;
+  text-shadow: 6px 4px 11px #000000;
+  color: #000000;
+  font-family: "Palanquin-Thin";
+  text-align: right;
+  transition: all 0.9s ease;
+  top: 0px;
+}
+.fixing-image-title h1 {
+  padding-top: 50px;
+  padding-right: 10px;
+  font-size: 35pt;
+}
+.fixing-title {
+  color: #a7a7a7;
+  font-family: "Palanquin-Thin";
+  font-size: 35pt;
+  text-align: center;
+  text-shadow: 6px 4px 6px #000000;
+  padding-top: 50px;
+}
+.fixing-desc {
+  font-family: "Palanquin-Regular";
+  font-size: 10pt;
+  line-height: 30px;
+  color: #a8a8a8;
+  text-align: justify;
+}
+section.counters .line {
+  width: 30%;
+  height: 1px;
+  background-color: #a7a7a7;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+/*** Home - Footer ***/
+section.iletisim {
+  background: black;
+}
+section.iletisim:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.contact-title .title {
+  padding-top: 100px;
+  color: #ffffff;
+  font-family: "Palanquin-Thin";
+  font-size: 45pt;
+  background-color: #282828;
+  text-align: right;
+  margin-left: 200px;
+  margin-right: 50px;
+  float: left;
+}
+.contact-title .line {
+  width: 1px;
+  height: 100px;
+  background-color: #ffffff;
+  float: left;
+  margin-top: 90px;
+}
+.contact-detail {
+  margin: 100px 0 20px 0;
+  padding-left: 0px;
+}
+.contact-detail .icon {
+  opacity: 0.6;
+  font-size: 25px;
+  float: left;
+  color: #ffffff;
+  padding-right: 10px;
+}
+.contact-detail p {
+  opacity: 0.6;
+  color: #ffffff;
+  font-family: "Palanquin-Thin";
+  font-size: 13pt;
+}
+.footer-social-media {
+  display: none;
+}
+.advert {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10px 0px;
+}
+.advert a {
+  color: #ffffff;
+  font-family: "OpenSans";
+}
+
+/*** Make A Reservation - Header ***/
+.header {
+  width: 100%;
+  position: fixed;
+  background: #0e0e0e;
+  top: 0;
+  opacity: 1;
+  z-index: 2;
+}
+
+/*** Make A Reservation ***/
+section.reservation {
+  background-color: #181818;
+  padding-bottom: 30px;
+}
+section.reservation:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.reservation-container {
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 50px;
+}
+.reservation-container .reservation-big-title {
+  line-height: 30px;
+  text-align: justify;
+  color: #a9a9a9;
+  font-family: "Palanquin-Thin";
+  padding-bottom: 35px;
+  font-size: 45pt;
+  border-bottom: 1px solid #a9a9a9;
+}
+.reservation-container .reservation-desc {
+  box-shadow: 11px 11px 14px #060606;
+  background-color: #282828;
+  padding: 20px 80px;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: justify;
+  color: #a9a9a9;
+  font-size: 10pt;
+  font-family: "Palanquin-Regular";
+}
+
+/*** Most Read Books - Slider ***/
+section.hizmetler-slider {
+  background-color: #181818;
+}
+section.hizmetler-slider:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.services-container {
+  margin-right: 200px;
+  margin-left: 100px;
+}
+.services-container img {
+  transition: all 0.9s ease;
+}
+.services-container img:hover {
+  transform: scale(1.1);
+}
+.services-container .title {
+  font-size: 50pt;
+  text-align: left;
+  color: #a7a7a7;
+  border-bottom: 1px solid #a7a7a7;
+  font-family: "Palanquin-Thin";
+  margin-top: 20px;
+}
+
+/*** Books - 1 ***/
+section.books1 {
+  margin-top: 100px;
+  background-color: #181818;
+}
+section.books1:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.services-container .services-image {
+  padding-right: 40px;
+}
+.services-container .services-desc {
+  box-shadow: 11px 11px 14px #060606;
+  background-color: #282828;
+  padding: 20px 80px;
+  margin-top: -80px;
+}
+
+/*** Books - 2 ***/
+section.books2 {
+  margin-top: 300px;
+  background-color: #181818;
+}
+section.books2:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.services-container .line {
+  height: 1px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/*** Books- 3 ***/
+section.books3 {
+  margin-top: 200px;
+  background-color: #181818;
+}
+section.books3:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*** Books - 4 ***/
+section.books4 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  background-color: #181818;
+}
+section.books4:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*** Contact ***/
+section.iletisim-page {
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 150px;
+}
+section.iletisim-page:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.contact-line {
+  width: 1px;
+  height: 50%;
+  background-color: #ffffff;
+}
+.contact-panel {
+  padding: 0;
+  max-width: 500px;
+  position: absolute;
+  z-index: 1;
+  background-color: #272727;
+  opacity: 0.9;
+  margin-left: 100px;
+  margin-top: -25px;
+  box-shadow: 6px 6px 16px #000000;
+}
+.contact-panel .title {
+  font-family: "Palanquin-Thin";
+  color: #ffffff;
+  font-size: 50pt;
+  text-align: left;
+}
+.contact-panel .icon {
+  font-size: 25px;
+  float: left;
+  color: #ffffff;
+  padding-right: 10px;
+}
+.contact-panel p {
+  color: #ffffff;
+  font-family: "Palanquin-Thin";
+  font-size: 13pt;
+}
+
+.contact-panel .phone-numbers,
+.contact-panel .email,
+.contact-panel .address {
+  margin-top: 30px;
+}
+
+.contact-image {
+  transition: all 0.9s ease;
+  float: right;
+}
+
+.contact-image:hover {
+  transform: scale(1.1);
+}
+.footer-page-social-media {
+  text-align: left;
+  margin-top: 20px;
+}
+.footer-page-social-media ul {
+  padding-left: 0px;
+}
+.footer-page-social-media ul li {
+  font-size: 18px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0 8px;
+}
+.footer-page-social-media ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14pt;
+  font-family: "Palanquin-Thin";
+}
+.footer-page-social-media ul li a:hover {
+  color: #fec200;
+}
+.contact-panel {
+  padding: 0;
+  margin-top: -25px;
+}
+
+.iletisim-card {
+  padding: 30px 30px 30px 30px;
+}

@@ -1,0 +1,339 @@
+@media (max-width: 1600px) {
+  /*** Home - Header ***/
+  .logo {
+    padding: 20px 0 15px 85px;
+  }
+  /*** Make Reservation ***/
+  .reservation-container .reservation-desc {
+    padding: 20px 50px;
+  }
+  .reservation-container .reservation-big-title {
+    font-size: 40pt;
+  }
+}
+
+@media (max-width: 1440px) {
+  /*** Home - Header ***/
+  .logo {
+    width: 14%;
+  }
+  /*** Home - counter ***/
+  section.counter .panel {
+    padding: 0px 50px;
+  }
+  .fixing-image-title {
+    font-size: 25pt;
+  }
+  .fixing-image-title h1 {
+    padding-top: 0px;
+    font-size: 25pt;
+  }
+  .fixing {
+    padding: 10px 0px;
+  }
+  /*** Home - Footer ***/
+  .contact-title .title {
+    margin-left: 150px;
+  }
+  .contact-detail p {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width: 1366px) {
+  /*** Home - Header ***/
+  .nav ul li {
+    padding: 0 30px;
+  }
+  .nav ul li a {
+    font-size: 12pt;
+  }
+  .dropbtn {
+    font-size: 12pt;
+  }
+  /*** Home - Slider ***/
+  #homeSlider .owl-nav [class*="owl-"] {
+    font-size: 25px;
+  }
+  /*** Home - counter ***/
+  .fixing-title {
+    font-size: 25pt;
+  }
+  /*** Home - Footer ***/
+  .contact-title .title {
+    margin-left: 100px;
+  }
+  .contact-detail .icon {
+    font-size: 22px;
+  }
+  /*** Make Reservation ***/
+  .reservation-container .reservation-big-title {
+    font-size: 35pt;
+  }
+  /*** Contact ***/
+  .contact-panel {
+    margin-left: 75px;
+  }
+  .contact-panel .title {
+    font-size: 40pt;
+  }
+  .contact-panel .phone-numbers,
+  .contact-panel .email,
+  .contact-panel .address {
+    margin-top: 15px;
+  }
+  .contact-panel p {
+    font-size: 11pt;
+  }
+}
+@media (max-width: 1280px) {
+  /*** Home - Slider ***/
+  .slider-text {
+    left: 5%;
+    bottom: 40%;
+  }
+  /*** Home - counter ***/
+  section.counter {
+    margin-top: 100px;
+  }
+  /*** Home - Footer ***/
+  .contact-title .title {
+    padding-top: 75px;
+  }
+  .contact-title .line {
+    margin-top: 70px;
+  }
+  .contact-detail {
+    margin-top: 75px;
+  }
+  .contact-detail p {
+    font-size: 10pt;
+  }
+  /*** Make Reservation ***/
+  .reservation-container .reservation-big-title {
+    font-size: 30pt;
+    padding-bottom: 15px;
+  }
+  .reservation-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  /*** Home - Header ***/
+  .logo {
+    padding: 20px 0 15px 60px;
+  }
+  .nav {
+    padding-top: 35px;
+  }
+  .nav ul li {
+    padding: 0 20px;
+  }
+  /*** Home - Slider ***/
+  .slider-text h1 {
+    font-size: 20pt;
+  }
+  .social-media ul li {
+    font-size: 17px;
+  }
+  li.social-media-line {
+    height: 130px;
+  }
+  /*** Home - counter ***/
+  section.counter {
+    margin-bottom: 100px;
+  }
+  /*** Home - Footer ***/
+  .contact-title {
+    background-color: #282828;
+  }
+  .contact-title .title {
+    margin: 0px;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 40px;
+    float: none;
+  }
+  .contact-title .line {
+    display: none;
+  }
+  .contact-detail {
+    margin-top: 15px;
+  }
+  /*** Make Reservation ***/
+  .reservation-container {
+    padding-top: 20px;
+  }
+  /*** Contact ***/
+  .contact-panel {
+    margin-left: 50px;
+  }
+  .contact-panel .title {
+    font-size: 30pt;
+  }
+  .contact-panel .icon {
+    font-size: 20px;
+  }
+  .contact-panel p {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 800px) {
+  /*** Home - Header ***/
+  button.toggle-nav {
+    float: right;
+    display: inline-block;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding: 20px 20px 0px 0px;
+    font-size: 25pt;
+  }
+  .nav {
+    display: none;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .logo {
+    padding: 10px 0px 10px 20px;
+  }
+  .nav ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .nav ul li {
+    display: block;
+    padding: 5px 0px;
+  }
+  .nav ul li a {
+    text-align: center;
+  }
+  .dropdown-content {
+    width: 100%;
+  }
+  /*** Home - Slider ***/
+  .slider-text h1 {
+    font-size: 15pt;
+  }
+  li.social-media-line {
+    display: none;
+  }
+  .slider-panel {
+    right: 3%;
+  }
+  /*** Home - counter ***/
+  section.counter {
+    margin-top: 50px;
+  }
+  .fixing-image {
+    transition: none;
+  }
+  .fixing-image:hover {
+    transform: none;
+  }
+  /*** Make Reservation ***/
+  .reservation-container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  /*** Contact ***/
+  section.iletisim-page {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .iletisim-card {
+    padding: 30px 30px 0px 30px;
+  }
+  .contact-image {
+    transition: none;
+  }
+  .contact-image:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /*** Make Reservation ***/
+  .reservation-container .reservation-big-title {
+    font-size: 25pt;
+  }
+}
+@media (max-width: 736px) {
+  /*** Home - counter ***/
+  .fixing-title {
+    padding-top: 0px;
+  }
+  section.counter .line {
+    margin-top: 50px;
+  }
+  /*** Make Reservation ***/
+  .reservation-container .reservation-desc {
+    padding: 20px 30px;
+  }
+  /*** Contact ***/
+  #map {
+    min-height: 200px;
+  }
+}
+@media (max-width: 425px) {
+  /*** Home - Header ***/
+  .logo {
+    padding: 10px 0px 10px 10px;
+    width: 18%;
+  }
+  button.toggle-nav {
+    font-size: 20pt;
+  }
+  /*** Home - Slider ***/
+  .slider-text {
+    bottom: 10%;
+  }
+  .slider-text h1 {
+    font-size: 11pt;
+  }
+  #homeSlider .owl-nav.disabled {
+    right: 4%;
+    bottom: 12%;
+  }
+  #homeSlider .owl-nav [class*="owl-"] {
+    font-size: 20px;
+  }
+  .slider:after {
+    height: 5px;
+  }
+  /*** Home - counter ***/
+  section.counter .panel {
+    padding: 0px 20px;
+  }
+  .fixing-image-title {
+    font-size: 17pt;
+  }
+  .fixing-image-title h1 {
+    font-size: 17pt;
+  }
+  /*** Make Reservation ***/
+  .reservation-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .reservation-container .reservation-big-title {
+    font-size: 20pt;
+    padding-bottom: 3px;
+  }
+  /*** Contact ***/
+  section.iletisim-page {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .contact-panel {
+    position: relative;
+  }
+  .contact-image {
+    display: none;
+  }
+}
